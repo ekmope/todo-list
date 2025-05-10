@@ -21,7 +21,7 @@
 
 1. [Introduction](#1-introduction)
 2. [Features](#2-features)
-3. [Quick Start](#3-quick-start)
+3. [Quick Start](#3-quick-start) 
 4. [Advanced Usage](#4-advanced-usage)
 5. [Build from Source](#5-build-from-source)
 6. [Roadmap](#6-roadmap)
@@ -70,34 +70,39 @@ cd todo-list
 
 # 直接运行
 python todo.py
-Basic Commands
-Command	Description	Example
-add	添加任务	add 购买牛奶
-done	标记完成	done 2
-list	查看任务列表	list
-clear	清空所有任务	clear
-exit	退出程序	exit
+```
+
+### Basic Commands
+| Command | Description     | Example         |
+|---------|-----------------|-----------------|
+| `add`   | 添加任务         | `add 购买牛奶`  |
+| `done`  | 标记完成         | `done 2`        |
+| `list`  | 查看任务列表     | `list`          |
+| `clear` | 清空所有任务     | `clear`         |
+| `exit`  | 退出程序         | `exit`          |
 
 ---
 
 ## 4. Advanced Usage
 
-数据文件定制
-修改 TODO_FILE 变量指定存储路径：
-
-python
+### 数据文件定制
+```python
 # 在 todo.py 中修改
 TODO_FILE = "/path/to/custom_tasks.txt"
-日志记录（示例扩展）
-python
+```
+
+### 日志记录（示例扩展）
+```python
 import logging
 logging.basicConfig(filename='todo.log', level=logging.INFO)
+```
 
 ---
 
 ## 5. Build from Source
-生成可执行文件
-bash
+
+### 生成可执行文件
+```bash
 # 安装依赖
 pip install pyinstaller
 
@@ -106,49 +111,49 @@ pyinstaller --onefile --name todo.exe todo.py
 
 # 打包（macOS/Linux）
 pyinstaller --onefile --name todo todo.py
-输出路径
+```
+
+### 输出路径
+```
 dist/
   ├── todo.exe    # Windows可执行文件
   └── todo        # Unix可执行文件
+```
 
 ---
 
 ## 6. Roadmap
-状态	功能	目标版本
-✅	基础任务管理	v1.0
-🚧	任务分类标签	v1.2
-⏳	云端同步功能	v2.0
-⏳	图形界面（Tkinter）	v2.1
+
+| 状态 | 功能                | 目标版本 |
+|------|---------------------|----------|
+| ✅   | 基础任务管理        | v1.0     |
+| 🚧   | 任务分类标签        | v1.2     |
+| ⏳   | 云端同步功能        | v2.0     |
+| ⏳   | 图形界面（Tkinter） | v2.1     |
 
 ---
 
 ## 7. Contributing
-欢迎通过以下方式参与贡献：
 
-Fork 本仓库
-
-创建功能分支 (git checkout -b feature/awesome)
-
-提交修改 (git commit -am 'Add awesome feature')
-
-推送分支 (git push origin feature/awesome)
-
-发起 Pull Request
+欢迎通过以下方式参与贡献：  
+1. Fork 本仓库  
+2. 创建功能分支 (`git checkout -b feature/awesome`)  
+3. 提交修改 (`git commit -am 'Add awesome feature'`)  
+4. 推送分支 (`git push origin feature/awesome`)  
+5. 发起 Pull Request  
 
 ---
 
 ## 8. License
-本项目采用 MIT License，允许商业使用和修改。核心条款包括：
 
-保留原始版权声明
-
-免责条款
+本项目采用 [MIT License](LICENSE)，允许商业使用和修改。核心条款包括：  
+- 保留原始版权声明  
+- 免责条款  
 
 ---
 
 ## 9. Contact
-遇到问题或建议？欢迎通过以下方式联系：
 
-📮 Email: your.email@example.com
-
-🐛 Issue Tracker
+遇到问题或建议？欢迎通过以下方式联系：  
+- 📮 Email: your.email@example.com  
+- 🐛 [Issue Tracker](https://github.com/ekmope/todo-list/issues)  
