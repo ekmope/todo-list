@@ -5,7 +5,9 @@
 <div align="center">
   <img src="https://cdn-icons-png.flaticon.com/512/3293/3293464.png" width="20%" alt="Todo List" />
 </div>
+
 <hr>
+
 <div align="center" style="line-height: 1;">
   <a href="https://github.com/ekmope/todo-list"><img alt="GitHub Repo"
     src="https://img.shields.io/badge/📂%20GitHub-Todo_List-536af5?logo=github&color=536af5"/></a>
@@ -17,13 +19,15 @@
 
 ## Table of Contents
 
-1. [Introduction](#1-introduction)  
-2. [Features](#2-features)  
-3. [Quick Start](#3-quick-start)  
-4. [Advanced Usage](#4-advanced-usage)  
-5. [Build from Source](#5-build-from-source)  
-6. [Roadmap](#6-roadmap)  
-7. [Contributing](#7-contributing)  
+1. [Introduction](#1-introduction)
+2. [Features](#2-features)
+3. [Quick Start](#3-quick-start)
+4. [Advanced Usage](#4-advanced-usage)
+5. [Build from Source](#5-build-from-source)
+6. [Roadmap](#6-roadmap)
+7. [Contributing](#7-contributing)
+8. [License](#8-license)
+9. [Contact](#9-contact)
 
 ---
 
@@ -45,17 +49,17 @@
 - **跨平台兼容**：完美支持 Windows CMD/PowerShell 和 Unix Shell
 
 ### Functional Highlights
-- ✅ 添加/删除/完成任务  
-- ✅ 任务状态可视化（[ ]未完成 vs [x]已完成）  
-- ✅ 数据自动保存与加载  
-- 🚀 支持打包为独立可执行文件（.exe/.app）  
+- ✅ 添加/删除/完成任务
+- ✅ 任务状态可视化（[ ]未完成 vs [x]已完成）
+- ✅ 数据自动保存与加载
+- 🚀 支持打包为独立可执行文件（.exe/.app）
 
 ---
 
 ## 3. Quick Start
 
 ### Prerequisites
-- Python 3.6+  
+- Python 3.6+
 - Git（可选）
 
 ### Installation
@@ -73,7 +77,11 @@ done	标记完成	done 2
 list	查看任务列表	list
 clear	清空所有任务	clear
 exit	退出程序	exit
+
+---
+
 ## 4. Advanced Usage
+
 数据文件定制
 修改 TODO_FILE 变量指定存储路径：
 
@@ -84,6 +92,9 @@ TODO_FILE = "/path/to/custom_tasks.txt"
 python
 import logging
 logging.basicConfig(filename='todo.log', level=logging.INFO)
+
+---
+
 ## 5. Build from Source
 生成可执行文件
 bash
@@ -99,12 +110,18 @@ pyinstaller --onefile --name todo todo.py
 dist/
   ├── todo.exe    # Windows可执行文件
   └── todo        # Unix可执行文件
+
+---
+
 ## 6. Roadmap
 状态	功能	目标版本
 ✅	基础任务管理	v1.0
 🚧	任务分类标签	v1.2
 ⏳	云端同步功能	v2.0
 ⏳	图形界面（Tkinter）	v2.1
+
+---
+
 ## 7. Contributing
 欢迎通过以下方式参与贡献：
 
@@ -117,3 +134,21 @@ Fork 本仓库
 推送分支 (git push origin feature/awesome)
 
 发起 Pull Request
+
+---
+
+## 8. License
+本项目采用 MIT License，允许商业使用和修改。核心条款包括：
+
+保留原始版权声明
+
+免责条款
+
+---
+
+## 9. Contact
+遇到问题或建议？欢迎通过以下方式联系：
+
+📮 Email: your.email@example.com
+
+🐛 Issue Tracker
