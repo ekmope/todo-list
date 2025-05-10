@@ -24,8 +24,6 @@
 5. [Build from Source](#5-build-from-source)  
 6. [Roadmap](#6-roadmap)  
 7. [Contributing](#7-contributing)  
-8. [License](#8-license)  
-9. [Contact](#9-contact)  
 
 ---
 
@@ -75,7 +73,7 @@ done	标记完成	done 2
 list	查看任务列表	list
 clear	清空所有任务	clear
 exit	退出程序	exit
-4. Advanced Usage
+## 4. Advanced Usage
 数据文件定制
 修改 TODO_FILE 变量指定存储路径：
 
@@ -86,7 +84,7 @@ TODO_FILE = "/path/to/custom_tasks.txt"
 python
 import logging
 logging.basicConfig(filename='todo.log', level=logging.INFO)
-5. Build from Source
+## 5. Build from Source
 生成可执行文件
 bash
 # 安装依赖
@@ -101,13 +99,13 @@ pyinstaller --onefile --name todo todo.py
 dist/
   ├── todo.exe    # Windows可执行文件
   └── todo        # Unix可执行文件
-6. Roadmap
+## 6. Roadmap
 状态	功能	目标版本
 ✅	基础任务管理	v1.0
 🚧	任务分类标签	v1.2
 ⏳	云端同步功能	v2.0
 ⏳	图形界面（Tkinter）	v2.1
-7. Contributing
+## 7. Contributing
 欢迎通过以下方式参与贡献：
 
 Fork 本仓库
