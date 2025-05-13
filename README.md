@@ -44,7 +44,7 @@
 ## 2. Features
 
 ### Core Architecture
-- **极简设计**：单文件实现核心逻辑（<200行代码）
+- **极简设计**：单文件实现核心逻辑
 - **数据持久化**：自动保存任务到 `todo.txt` 文件
 - **跨平台兼容**：完美支持 Windows CMD/PowerShell 和 Unix Shell
 
