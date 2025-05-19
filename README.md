@@ -17,11 +17,26 @@
     src="https://img.shields.io/badge/📦%20Packaged_with-PyInstaller-2ba97a?color=2ba97a"/></a>
 </div>
 
+<div align="center">
+  <img src="https://cdn-icons-png.flaticon.com/512/3293/3293464.png" width="20%" alt="Todo List" />
+</div>
+
+<hr>
+
+<div align="center" style="line-height: 1;">
+  <a href="https://github.com/ekmope/todo-list"><img alt="GitHub Repo"
+    src="https://img.shields.io/badge/📂%20GitHub-Todo_List-536af5?logo=github&color=536af5"/></a>
+  <a href="https://choosealicense.com/licenses/mit/"><img alt="License"
+    src="https://img.shields.io/badge/📜%20License-MIT-f5de53?color=f5de53"/></a>
+  <a href="https://pypi.org/project/pyinstaller/"><img alt="PyInstaller"
+    src="https://img.shields.io/badge/📦%20Packaged_with-PyInstaller-2ba97a?color=2ba97a"/></a>
+</div>
+
 ## Table of Contents
 
 1. [Introduction](#1-introduction)
 2. [Features](#2-features)
-3. [Quick Start](#3-quick-start) 
+3. [Quick Start](#3-quick-start)
 4. [Advanced Usage](#4-advanced-usage)
 5. [Build from Source](#5-build-from-source)
 6. [Roadmap](#6-roadmap)
@@ -33,7 +48,7 @@
 
 ## 1. Introduction
 
-**Todo List** 是一个轻量级命令行任务管理工具，支持跨平台运行（Windows/macOS/Linux）。通过简洁的命令交互实现高效任务管理，数据自动持久化存储，适合开发者和终端用户日常使用。
+**Todo List** 是一个轻量级命令行任务管理工具，支持跨平台运行 (Windows/macOS/Linux)。通过简洁的命令交互实现高效任务管理，数据自动持久化存储，适合开发者和终端用户日常使用。
 
 <div align="center">
   <img src="demo.gif" width="70%">
@@ -44,116 +59,130 @@
 ## 2. Features
 
 ### Core Architecture
-- **极简设计**：单文件实现核心逻辑
-- **数据持久化**：自动保存任务到 `todo.txt` 文件
-- **跨平台兼容**：完美支持 Windows CMD/PowerShell 和 Unix Shell
+
+* ✨ 极简设计：单文件实现核心逻辑
+* 📂 数据持久化：自动保存任务到 `~/.todo.json`
+* 🚀 自动备份：自动创建最多 5 份 JSON 备份
+* ☑️ 事件高亮：支持任务优先级分色标记
 
 ### Functional Highlights
-- ✅ 添加/删除/完成任务
-- ✅ 任务状态可视化（[ ]未完成 vs [x]已完成）
-- ✅ 数据自动保存与加载
-- 🚀 支持打包为独立可执行文件（.exe/.app）
+
+* ✅ 添加/删除/完成/修改/搜索 任务
+* ✅ 任务状态可视化 ( □ vs ✓ )
+* ✅ 支持多运行平台 + 类 Unix 色彩输出
+* ✅ 合理错误处理，防止数据损坏
 
 ---
 
 ## 3. Quick Start
 
 ### Prerequisites
-- Python 3.6+
-- Git（可选）
+
+* Python 3.6+
 
 ### Installation
+
 ```bash
 # Clone 仓库
-git clone https://github.com/ekmope/todo-list.git
-cd todo-list
+$ git clone https://github.com/ekmope/todo-list.git
+$ cd todo-list
 
 # 直接运行
-python todo.py
+$ python todo4.0.py
 ```
 
 ### Basic Commands
-| Command | Description     | Example         |
-|---------|-----------------|-----------------|
-| `add`   | 添加任务         | `add 购买牛奶`  |
-| `done`  | 标记完成         | `done 2`        |
-| `list`  | 查看任务列表     | `list`          |
-| `clear` | 清空所有任务     | `clear`         |
-| `exit`  | 退出程序         | `exit`          |
+
+| Command  | Description | Example        |
+| -------- | ----------- | -------------- |
+| `add`    | 添加任务        | `add 购买牛奶`     |
+| `done`   | 标记完成        | `done 2`       |
+| `edit`   | 编辑任务        | `edit 2 购买美容罐` |
+| `remove` | 删除指定任务      | `remove 1`     |
+| `clear`  | 清空所有任务      | `clear`        |
+| `list`   | 显示任务列表      | `list`         |
+| `search` | 搜索包含关键词任务   | `search 牛奶`    |
+| `exit`   | 退出程序        | `exit`         |
 
 ---
 
 ## 4. Advanced Usage
 
-### 数据文件定制
+### 自定义任务文件路径
+
+在源码中修改:
+
 ```python
-# 在 todo.py 中修改
-TODO_FILE = "/path/to/custom_tasks.txt"
+TODO_FILE = Path.home() / ".todo.json"
 ```
 
-### 日志记录（示例扩展）
-```python
-import logging
-logging.basicConfig(filename='todo.log', level=logging.INFO)
-```
+### 数据备份
+
+每次读取数据时会自动备份到 `~/todo_backups/`，最多保留 5 份，高效防止损坏。
 
 ---
 
 ## 5. Build from Source
 
 ### 生成可执行文件
+
 ```bash
-# 安装依赖
+# 安装打包工具
 pip install pyinstaller
 
-# 打包（Windows）
-pyinstaller --onefile --name todo.exe todo.py
+# Windows 打包
+pyinstaller --onefile --name todo.exe todo4.0.py
 
-# 打包（macOS/Linux）
-pyinstaller --onefile --name todo todo.py
+# macOS/Linux 打包
+pyinstaller --onefile --name todo todo4.0.py
 ```
 
-### 输出路径
+### 输出文件
+
 ```
 dist/
-  ├── todo.exe    # Windows可执行文件
-  └── todo        # Unix可执行文件
+  ├── todo.exe    # Windows
+  └── todo        # Unix/macOS
 ```
 
 ---
 
 ## 6. Roadmap
 
-| 状态 | 功能                | 目标版本 |
-|------|---------------------|----------|
-| ✅   | 基础任务管理        | v1.0     |
-| 🚧   | 任务分类标签        | v1.2     |
-| ⏳   | 云端同步功能        | v2.0     |
-| ⏳   | 图形界面（Tkinter） | v2.1     |
+| 状态 | 功能         | 目标版本 |
+| -- | ---------- | ---- |
+| ✅  | 基础任务管理     | v1.0 |
+| ✅  | 任务优先级标记    | v2.0 |
+| ✅  | 优雅的命令行控制组件 | v3.0 |
+| ✅  | 数据备份和效验    | v4.0 |
+| ⏳  | 任务分类和标签    | v4.1 |
 
 ---
 
 ## 7. Contributing
 
-欢迎通过以下方式参与贡献：  
-1. Fork 本仓库  
-2. 创建功能分支 (`git checkout -b feature/awesome`)  
-3. 提交修改 (`git commit -am 'Add awesome feature'`)  
-4. 推送分支 (`git push origin feature/awesome`)  
-5. 发起 Pull Request  
+欢迎不同方式的贡献：
+
+1. Fork 本项目
+2. 创建分支 (`git checkout -b feature/xxx`)
+3. 提交修改 (`git commit -am 'Add xxx feature'`)
+4. 推送分支 (`git push origin feature/xxx`)
+5. 发起 Pull Request
 
 ---
 
 ## 8. License
 
-本项目采用 [MIT License](LICENSE)，允许商业使用和修改。核心条款包括：  
-- 保留原始版权声明  
-- 免责条款  
+本项目采用 [MIT License](LICENSE)，允许商业使用和修改：
+
+* 须保留版权声明
+* 未提供任何报保或报价
 
 ---
 
 ## 9. Contact
 
-遇到问题或建议？欢迎通过以下方式联系：  
-- 📮 Email: 2014036853@qq.com  
-- 🐛 [Issue Tracker](https://github.com/ekmope/todo-list/issues)  
+遇到问题或有好事情想跟我说？
+
+* 🛏 Email: [2014036853@qq.com](mailto:2014036853@qq.com)
+* 🐛 [Issue Tracker](https://github.com/ekmope/todo-list/issues)
