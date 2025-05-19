@@ -17,21 +17,6 @@
     src="https://img.shields.io/badge/📦%20Packaged_with-PyInstaller-2ba97a?color=2ba97a"/></a>
 </div>
 
-<div align="center">
-  <img src="https://cdn-icons-png.flaticon.com/512/3293/3293464.png" width="20%" alt="Todo List" />
-</div>
-
-<hr>
-
-<div align="center" style="line-height: 1;">
-  <a href="https://github.com/ekmope/todo-list"><img alt="GitHub Repo"
-    src="https://img.shields.io/badge/📂%20GitHub-Todo_List-536af5?logo=github&color=536af5"/></a>
-  <a href="https://choosealicense.com/licenses/mit/"><img alt="License"
-    src="https://img.shields.io/badge/📜%20License-MIT-f5de53?color=f5de53"/></a>
-  <a href="https://pypi.org/project/pyinstaller/"><img alt="PyInstaller"
-    src="https://img.shields.io/badge/📦%20Packaged_with-PyInstaller-2ba97a?color=2ba97a"/></a>
-</div>
-
 ## Table of Contents
 
 1. [Introduction](#1-introduction)
