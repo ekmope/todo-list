@@ -149,9 +149,9 @@ dist/
 欢迎不同方式的贡献：
 
 1. Fork 本项目
-2. 创建分支 (`git checkout -b feature/xxx`)
-3. 提交修改 (`git commit -am 'Add xxx feature'`)
-4. 推送分支 (`git push origin feature/xxx`)
+2. 创建分支 
+3. 提交修改 
+4. 推送分支 
 5. 发起 Pull Request
 
 ---
