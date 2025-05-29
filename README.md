@@ -33,7 +33,7 @@
 
 ## 1. Introduction
 
-**Todo List** 是一个轻量级命令行任务管理工具，支持跨平台运行 (Windows/macOS/Linux)。通过简洁的命令交互实现高效任务管理，数据自动持久化存储，适合开发者和终端用户日常使用。
+**Todo List** 是一个轻量级命令行任务管理工具，支持跨平台运行 (Windows/macOS/Linux)   通过简洁的命令交互实现高效任务管理，数据自动持久化存储，适合开发者和终端用户日常使用。
 
 <div align="center">
   <img src="demo.gif" width="70%">
@@ -168,6 +168,7 @@ dist/
 ## 9. Contact
 
 遇到问题或有好事情想跟我说？
+If you encounter problems or have good things to tell me
 
 * 🛏 Email: [2014036853@qq.com](mailto:2014036853@qq.com)
 * 🐛 [Issue Tracker](https://github.com/ekmope/todo-list/issues)
