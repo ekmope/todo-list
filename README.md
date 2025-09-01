@@ -24,10 +24,9 @@
 3. [Quick Start](#3-quick-start)
 4. [Advanced Usage](#4-advanced-usage)
 5. [Build from Source](#5-build-from-source)
-6. [Roadmap](#6-roadmap)
-7. [Contributing](#7-contributing)
-8. [License](#8-license)
-9. [Contact](#9-contact)
+6. [Contributing](#6-contributing)
+7. [License](#7-license)
+8. [Contact](#8-contact)
 
 ---
 
@@ -132,18 +131,7 @@ dist/
 
 ---
 
-## 6. Roadmap
-
-| 状态 | 功能         | 目标版本 |
-| -- | ---------- | ---- |
-| ✅  | 基础任务管理     | v1.0 |
-| ✅  | 任务优先级标记    | v2.0 |
-| ✅  | 优雅的命令行控制组件 | v3.0 |
-| ✅  | 数据备份和效验    | v4.0 |
-
----
-
-## 7. Contributing
+## 6. Contributing
 
 欢迎不同方式的贡献：
 
@@ -155,7 +143,7 @@ dist/
 
 ---
 
-## 8. License
+## 7. License
 
 本项目采用 [MIT License](LICENSE)，允许商业使用和修改：
 
@@ -164,7 +152,7 @@ dist/
 
 ---
 
-## 9. Contact
+## 8. Contact
 
 遇到问题或有好事情想跟我说？
 If you encounter problems or have good things to tell me
