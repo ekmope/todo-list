@@ -51,8 +51,12 @@
 
 ### Functional Highlights
 
-* ✅ 添加/删除/完成/修改/搜索 任务
-* ✅ 任务状态可视化 ( □ vs ✓ )
+* ✅ 添加/删除/完成/修改/搜索 任务（支持命令缩写）
+* ✅ 任务优先级设置（high/normal/low）
+* ✅ 截止日期管理（支持绝对日期和相对时间如 `today`/`tomorrow`/`3days`）
+* ✅ 任务状态可视化 ( □ 待办 vs ✓ 已完成 )
+* ✅ 数据统计功能（总任务数、完成率、时间维度分析等）
+* ✅ 启动时自动提醒过期任务
 * ✅ 支持多运行平台 + 类 Unix 色彩输出
 * ✅ 合理错误处理，防止数据损坏
 
@@ -72,7 +76,7 @@ $ git clone https://github.com/ekmope/todo-list.git
 $ cd todo-list
 
 # 直接运行
-$ python todo4.0.py
+$ python todo_0.5.3.py
 ```
 
 ### Basic Commands
